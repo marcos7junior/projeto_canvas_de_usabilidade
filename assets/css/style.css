@@ -4,8 +4,9 @@
     border-radius: 0;
 }
 
-.navbar_logo {
-    width: 50px;
+.navbar-header img {
+    max-width: 40px;
+    margin-top: 0.5rem;
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -16,6 +17,29 @@
     padding-top: 20px;
     background-color: #f1f1f1;
     height: 100%;
+}
+
+.header header{
+    display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.header img {
+    max-width: 100px;
+    margin-top: 3rem;
+}
+
+.titulo h1{
+    text-align: center;
+    padding: 50px;
+    color: black;
+}
+
+#imgusabilidade{
+    align-items: center;
 }
 
 /* Set black background color, white text and some padding */
