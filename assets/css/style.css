@@ -1,4 +1,4 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -18,12 +18,24 @@
     height: 100%;
 }
 
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+p {
+    color: black;
+}
+
 /* Set black background color, white text and some padding */
 footer {
     background-color: #555;
     color: white;
     padding: 15px;
 }
+
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -32,4 +44,23 @@ footer {
     padding: 15px;
 }
 .row.content {height:auto;} 
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
