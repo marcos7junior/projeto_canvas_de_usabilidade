@@ -1,3 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.redes-sociais {
+    display:flex;
+    /* justify-content: center; */
+    /* align-items:center; */
+    flex-direction: column;
+    /* height: 100vh; */
+    font-size: 25px;
+    /* background-color: rgba(157, 157, 157, 0.2); */
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    /* color: aliceblue; */
+    z-index:1;
+}
+
+.box {
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.box:hover {
+    width: 200px;
+    background: #c32aa3;
+    border-radius: 35px;
+    color:#f1f1f1;
+    box-shadow: 0 0 50px #b315917c;
+}
+.box:nth-child(2):hover{
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+}
+.redes-sociais a p {
+    font-style: none;
+    color:#f1f1f1;
+
+}
+.redes-sociais p {
+    transform: translate(60px);
+}
+.box .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+.instagram {
+    background-color: #c32aa3;
+}
+.facebook{
+    background-color: #1877f2;
+}
+.box:hover .icon {
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 26);
+}
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
     margin-bottom: 0;
